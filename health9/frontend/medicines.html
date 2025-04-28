@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Medicines</title>
+  <link rel="stylesheet" href="css/medicines.css">
+</head>
+<body>
+  <!-- Header -->
+  <header id="header">
+    <h1>Medicines Management</h1>
+  </header>
+
+  <!-- Main Container -->
+  <div id="main-container">
+    <!-- Sidebar -->
+    <aside id="sidebar">
+      <h3>Menu</h3>
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="medicines.html" class="active">Medicines</a></li>
+        <li><a href="prescriptions.html">Prescriptions</a></li>
+      </ul>
+    </aside>
+
+    <!-- Content -->
+    <section id="content">
+      <h2>Medicines List</h2>
+      <table id="medicine-table">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Quantity</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Medicine rows will be dynamically added here -->
+        </tbody>
+      </table>
+
+      <h3>Add/Edit Medicine</h3>
+      <form id="medicine-form">
+        <input type="hidden" id="medicine-id">
+        <div class="form-group">
+          <label for="medicine-name">Name:</label>
+          <input type="text" id="medicine-name" placeholder="Enter medicine name" required>
+        </div>
+        <div class="form-group">
+          <label for="medicine-description">Description:</label>
+          <input type="text" id="medicine-description" placeholder="Enter description" required>
+        </div>
+        <div class="form-group">
+          <label for="medicine-quantity">Quantity:</label>
+          <input type="number" id="medicine-quantity" placeholder="Enter quantity" required>
+        </div>
+        <button type="submit" class="btn btn-primary">Save</button>
+      </form>
+    </section>
+  </div>
+
+  <!-- Footer -->
+  <footer id="footer">
+    <p>&copy; 2025 Health9. All rights reserved.</p>
+  </footer>
+
+  <script src="js/medicines.js"></script>
+</body>
+</html>
